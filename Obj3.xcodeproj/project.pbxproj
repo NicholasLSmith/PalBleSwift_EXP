@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E13B6CFB218B1B2F004E0644 /* PalBleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13B6CFA218B1B2F004E0644 /* PalBleSwift.framework */; };
+		E13B6CFC218B1B31004E0644 /* PalBleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13B6CFA218B1B2F004E0644 /* PalBleSwift.framework */; };
+		E13B6CFD218B1B31004E0644 /* PalBleSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E13B6CFA218B1B2F004E0644 /* PalBleSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E14A99182139852100FFD217 /* TestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A99162139850100FFD217 /* TestFramework.framework */; };
+		E14A99192139852100FFD217 /* TestFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E14A99162139850100FFD217 /* TestFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E14A992021398CFB00FFD217 /* RxBluetoothKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A991E21398CF100FFD217 /* RxBluetoothKit.framework */; };
+		E14A992121398CFB00FFD217 /* RxBluetoothKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E14A991E21398CF100FFD217 /* RxBluetoothKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E14A992421398D5100FFD217 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A992221398D4700FFD217 /* RxCocoa.framework */; };
+		E14A992521398D5100FFD217 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E14A992221398D4700FFD217 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E14A992821398D7400FFD217 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A992621398D6B00FFD217 /* RxSwift.framework */; };
+		E14A992921398D7400FFD217 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E14A992621398D6B00FFD217 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E17967532189D67D00ECB9EF /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17967522189D67D00ECB9EF /* CryptoSwift.framework */; };
+		E17967542189D68900ECB9EF /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17967522189D67D00ECB9EF /* CryptoSwift.framework */; };
+		E17967552189D68900ECB9EF /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E17967522189D67D00ECB9EF /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E18A5306213972650003BF3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E18A5305213972650003BF3F /* AppDelegate.m */; };
 		E18A5309213972650003BF3F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E18A5308213972650003BF3F /* ViewController.m */; };
 		E18A530C213972650003BF3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18A530A213972650003BF3F /* Main.storyboard */; };
@@ -16,7 +30,32 @@
 		E18A5317213972650003BF3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E18A5316213972650003BF3F /* main.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E18A5321213972A00003BF3F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E13B6CFD218B1B31004E0644 /* PalBleSwift.framework in Embed Frameworks */,
+				E14A992921398D7400FFD217 /* RxSwift.framework in Embed Frameworks */,
+				E14A992521398D5100FFD217 /* RxCocoa.framework in Embed Frameworks */,
+				E17967552189D68900ECB9EF /* CryptoSwift.framework in Embed Frameworks */,
+				E14A99192139852100FFD217 /* TestFramework.framework in Embed Frameworks */,
+				E14A992121398CFB00FFD217 /* RxBluetoothKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		E13B6CFA218B1B2F004E0644 /* PalBleSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PalBleSwift.framework; sourceTree = "<group>"; };
+		E14A99162139850100FFD217 /* TestFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestFramework.framework; sourceTree = "<group>"; };
+		E14A991E21398CF100FFD217 /* RxBluetoothKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBluetoothKit.framework; path = Carthage/Build/iOS/RxBluetoothKit.framework; sourceTree = SOURCE_ROOT; };
+		E14A992221398D4700FFD217 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
+		E14A992621398D6B00FFD217 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = SOURCE_ROOT; };
+		E17967522189D67D00ECB9EF /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = SOURCE_ROOT; };
 		E18A5301213972650003BF3F /* Obj3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Obj3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18A5304213972650003BF3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E18A5305213972650003BF3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -35,6 +74,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E17967532189D67D00ECB9EF /* CryptoSwift.framework in Frameworks */,
+				E14A992821398D7400FFD217 /* RxSwift.framework in Frameworks */,
+				E14A992421398D5100FFD217 /* RxCocoa.framework in Frameworks */,
+				E13B6CFB218B1B2F004E0644 /* PalBleSwift.framework in Frameworks */,
+				E14A99182139852100FFD217 /* TestFramework.framework in Frameworks */,
+				E14A992021398CFB00FFD217 /* RxBluetoothKit.framework in Frameworks */,
+				E13B6CFC218B1B31004E0644 /* PalBleSwift.framework in Frameworks */,
+				E17967542189D68900ECB9EF /* CryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +91,7 @@
 		E18A52F8213972650003BF3F = {
 			isa = PBXGroup;
 			children = (
+				E18A5325213973920003BF3F /* Frameworks */,
 				E18A5303213972650003BF3F /* Obj3 */,
 				E18A5302213972650003BF3F /* Products */,
 			);
@@ -74,6 +122,19 @@
 			path = Obj3;
 			sourceTree = "<group>";
 		};
+		E18A5325213973920003BF3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E13B6CFA218B1B2F004E0644 /* PalBleSwift.framework */,
+				E17967522189D67D00ECB9EF /* CryptoSwift.framework */,
+				E14A992621398D6B00FFD217 /* RxSwift.framework */,
+				E14A992221398D4700FFD217 /* RxCocoa.framework */,
+				E14A991E21398CF100FFD217 /* RxBluetoothKit.framework */,
+				E14A99162139850100FFD217 /* TestFramework.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -84,6 +145,7 @@
 				E18A52FD213972650003BF3F /* Sources */,
 				E18A52FE213972650003BF3F /* Frameworks */,
 				E18A52FF213972650003BF3F /* Resources */,
+				E18A5321213972A00003BF3F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,6 +238,7 @@
 		E18A5318213972650003BF3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -208,6 +271,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -234,6 +298,7 @@
 		E18A5319213972650003BF3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -266,6 +331,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -289,6 +355,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LG7FWJE4T4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Obj3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +378,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LG7FWJE4T4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Obj3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
