@@ -1,0 +1,11 @@
+framework module PalBleSwift {
+  umbrella header "PalBleSwift.h"
+
+  export *
+  module * { export * }
+}
+
+module PalBleSwift.Swift {
+    header "PalBleSwift-Swift.h"
+    requires objc
+}

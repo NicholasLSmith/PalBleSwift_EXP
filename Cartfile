@@ -1,2 +1,3 @@
 github "Polidea/RxBluetoothKit"
 github "krzyzanowskim/CryptoSwift"
+GitHub "NicholasLSmith/PalBleSwift" >= 0.0.4

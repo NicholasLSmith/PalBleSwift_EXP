@@ -7,20 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E13B6CFB218B1B2F004E0644 /* PalBleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13B6CFA218B1B2F004E0644 /* PalBleSwift.framework */; };
-		E13B6CFC218B1B31004E0644 /* PalBleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13B6CFA218B1B2F004E0644 /* PalBleSwift.framework */; };
-		E13B6CFD218B1B31004E0644 /* PalBleSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E13B6CFA218B1B2F004E0644 /* PalBleSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E14A99182139852100FFD217 /* TestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A99162139850100FFD217 /* TestFramework.framework */; };
-		E14A99192139852100FFD217 /* TestFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E14A99162139850100FFD217 /* TestFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E14A992021398CFB00FFD217 /* RxBluetoothKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A991E21398CF100FFD217 /* RxBluetoothKit.framework */; };
-		E14A992121398CFB00FFD217 /* RxBluetoothKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E14A991E21398CF100FFD217 /* RxBluetoothKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E14A992421398D5100FFD217 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A992221398D4700FFD217 /* RxCocoa.framework */; };
-		E14A992521398D5100FFD217 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E14A992221398D4700FFD217 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E14A992821398D7400FFD217 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14A992621398D6B00FFD217 /* RxSwift.framework */; };
-		E14A992921398D7400FFD217 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E14A992621398D6B00FFD217 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E17967532189D67D00ECB9EF /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17967522189D67D00ECB9EF /* CryptoSwift.framework */; };
-		E17967542189D68900ECB9EF /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17967522189D67D00ECB9EF /* CryptoSwift.framework */; };
-		E17967552189D68900ECB9EF /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E17967522189D67D00ECB9EF /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E14B91FF2243E24A0080B538 /* PalBleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14B91FE2243E24A0080B538 /* PalBleSwift.framework */; };
+		E14B92002243E24F0080B538 /* PalBleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14B91FE2243E24A0080B538 /* PalBleSwift.framework */; };
+		E14B92012243E24F0080B538 /* PalBleSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E14B91FE2243E24A0080B538 /* PalBleSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E18A5306213972650003BF3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E18A5305213972650003BF3F /* AppDelegate.m */; };
 		E18A5309213972650003BF3F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E18A5308213972650003BF3F /* ViewController.m */; };
 		E18A530C213972650003BF3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18A530A213972650003BF3F /* Main.storyboard */; };
@@ -28,6 +17,14 @@
 		E18A5311213972650003BF3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E18A5310213972650003BF3F /* Assets.xcassets */; };
 		E18A5314213972650003BF3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18A5312213972650003BF3F /* LaunchScreen.storyboard */; };
 		E18A5317213972650003BF3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E18A5316213972650003BF3F /* main.m */; };
+		E18BD6E02241491F00F0D25F /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18BD6DC2241491F00F0D25F /* CryptoSwift.framework */; };
+		E18BD6E22241491F00F0D25F /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18BD6DE2241491F00F0D25F /* RxSwift.framework */; };
+		E18BD6E42241492C00F0D25F /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E18BD6DC2241491F00F0D25F /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E18BD6E72241492C00F0D25F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18BD6DD2241491F00F0D25F /* RxCocoa.framework */; };
+		E18BD6E82241492C00F0D25F /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E18BD6DD2241491F00F0D25F /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E18BD6EA2241492C00F0D25F /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E18BD6DE2241491F00F0D25F /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E18BD6EC2241495100F0D25F /* RxBluetoothKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18BD6EB2241495100F0D25F /* RxBluetoothKit.framework */; };
+		E18BD6EE2241495900F0D25F /* RxBluetoothKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E18BD6EB2241495100F0D25F /* RxBluetoothKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,12 +34,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E13B6CFD218B1B31004E0644 /* PalBleSwift.framework in Embed Frameworks */,
-				E14A992921398D7400FFD217 /* RxSwift.framework in Embed Frameworks */,
-				E14A992521398D5100FFD217 /* RxCocoa.framework in Embed Frameworks */,
-				E17967552189D68900ECB9EF /* CryptoSwift.framework in Embed Frameworks */,
-				E14A99192139852100FFD217 /* TestFramework.framework in Embed Frameworks */,
-				E14A992121398CFB00FFD217 /* RxBluetoothKit.framework in Embed Frameworks */,
+				E18BD6EA2241492C00F0D25F /* RxSwift.framework in Embed Frameworks */,
+				E18BD6E82241492C00F0D25F /* RxCocoa.framework in Embed Frameworks */,
+				E14B92012243E24F0080B538 /* PalBleSwift.framework in Embed Frameworks */,
+				E18BD6EE2241495900F0D25F /* RxBluetoothKit.framework in Embed Frameworks */,
+				E18BD6E42241492C00F0D25F /* CryptoSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,12 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E13B6CFA218B1B2F004E0644 /* PalBleSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PalBleSwift.framework; sourceTree = "<group>"; };
-		E14A99162139850100FFD217 /* TestFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestFramework.framework; sourceTree = "<group>"; };
-		E14A991E21398CF100FFD217 /* RxBluetoothKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBluetoothKit.framework; path = Carthage/Build/iOS/RxBluetoothKit.framework; sourceTree = SOURCE_ROOT; };
-		E14A992221398D4700FFD217 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
-		E14A992621398D6B00FFD217 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = SOURCE_ROOT; };
-		E17967522189D67D00ECB9EF /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = SOURCE_ROOT; };
+		E14B91FE2243E24A0080B538 /* PalBleSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PalBleSwift.framework; sourceTree = "<group>"; };
 		E18A5301213972650003BF3F /* Obj3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Obj3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18A5304213972650003BF3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E18A5305213972650003BF3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +58,10 @@
 		E18A5313213972650003BF3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E18A5315213972650003BF3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E18A5316213972650003BF3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E18BD6DC2241491F00F0D25F /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
+		E18BD6DD2241491F00F0D25F /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		E18BD6DE2241491F00F0D25F /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		E18BD6EB2241495100F0D25F /* RxBluetoothKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBluetoothKit.framework; path = Carthage/Build/iOS/RxBluetoothKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,14 +69,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E17967532189D67D00ECB9EF /* CryptoSwift.framework in Frameworks */,
-				E14A992821398D7400FFD217 /* RxSwift.framework in Frameworks */,
-				E14A992421398D5100FFD217 /* RxCocoa.framework in Frameworks */,
-				E13B6CFB218B1B2F004E0644 /* PalBleSwift.framework in Frameworks */,
-				E14A99182139852100FFD217 /* TestFramework.framework in Frameworks */,
-				E14A992021398CFB00FFD217 /* RxBluetoothKit.framework in Frameworks */,
-				E13B6CFC218B1B31004E0644 /* PalBleSwift.framework in Frameworks */,
-				E17967542189D68900ECB9EF /* CryptoSwift.framework in Frameworks */,
+				E14B92002243E24F0080B538 /* PalBleSwift.framework in Frameworks */,
+				E18BD6E22241491F00F0D25F /* RxSwift.framework in Frameworks */,
+				E18BD6E72241492C00F0D25F /* RxCocoa.framework in Frameworks */,
+				E14B91FF2243E24A0080B538 /* PalBleSwift.framework in Frameworks */,
+				E18BD6E02241491F00F0D25F /* CryptoSwift.framework in Frameworks */,
+				E18BD6EC2241495100F0D25F /* RxBluetoothKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,9 +84,9 @@
 		E18A52F8213972650003BF3F = {
 			isa = PBXGroup;
 			children = (
-				E18A5325213973920003BF3F /* Frameworks */,
 				E18A5303213972650003BF3F /* Obj3 */,
 				E18A5302213972650003BF3F /* Products */,
+				E1B38322223AA45600D49958 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,17 +115,16 @@
 			path = Obj3;
 			sourceTree = "<group>";
 		};
-		E18A5325213973920003BF3F /* Frameworks */ = {
+		E1B38322223AA45600D49958 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E13B6CFA218B1B2F004E0644 /* PalBleSwift.framework */,
-				E17967522189D67D00ECB9EF /* CryptoSwift.framework */,
-				E14A992621398D6B00FFD217 /* RxSwift.framework */,
-				E14A992221398D4700FFD217 /* RxCocoa.framework */,
-				E14A991E21398CF100FFD217 /* RxBluetoothKit.framework */,
-				E14A99162139850100FFD217 /* TestFramework.framework */,
+				E14B91FE2243E24A0080B538 /* PalBleSwift.framework */,
+				E18BD6EB2241495100F0D25F /* RxBluetoothKit.framework */,
+				E18BD6DC2241491F00F0D25F /* CryptoSwift.framework */,
+				E18BD6DD2241491F00F0D25F /* RxCocoa.framework */,
+				E18BD6DE2241491F00F0D25F /* RxSwift.framework */,
 			);
-			path = Frameworks;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

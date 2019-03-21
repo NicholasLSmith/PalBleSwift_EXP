@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <TestFramework/TestFramework-Swift.h>
+//#import <TestFramework/TestFramework-Swift.h>
 #import <PalBleSwift/PalBleSwift-Swift.h>
 
 @interface ViewController ()
@@ -24,10 +24,10 @@ PalActivator* palActivator;
     // Do any additional setup after loading the view, typically from a nib.
     
     printf("Starting\n");
-    [TestCode Shout];
+    //[TestCode Shout];
     
-    TestCode* testCode = [[TestCode alloc] init];
-    NSLog(@"%@", [testCode getMessage]);
+    //TestCode* testCode = [[TestCode alloc] init];
+    //NSLog(@"%@", [testCode getMessage]);
     
     palBle = [[PalBle alloc] init];
     [palBle setListenerWithListener:self];
@@ -62,6 +62,11 @@ PalActivator* palActivator;
     printf("all done");
 }
 
+- (void)onScanErrorWithScanException:(BleScanException * _Nonnull)scanException { 
+    printf("%ld", (long)scanException.getReason);
+}
+
+
 
 
 - (void)onConnectedWithDevice:(PalDevice * _Nonnull)device {
@@ -70,6 +75,8 @@ PalActivator* palActivator;
         palActivator = (PalActivator *)device;
     }
 }
+
+
 
 - (void)onSummariesRetrieved {
     printf("Summaries Retrieved\n");
