@@ -32,9 +32,16 @@ PalActivator* palActivator;
     palBle = [[PalBle alloc] init];
     [palBle setListenerWithListener:self];
     
+    //Test to generate new key
+    //NSString *test = [palBle generateKey];
+    for(int i = 0; i < 5; i = i + 1) {
+        printf("%s\n", [[palBle generateKey] UTF8String]);
+    }
+    
     //[palBle startScan];
     //[palBle connectWithSerial:@"780000"];
     [palBle connectWithSerial:@"780000" key:@"ciNNPxZXoB_0C7htKpejCw=="];
+
 }
 
 
@@ -67,7 +74,9 @@ PalActivator* palActivator;
 }
 
 
-
+- (void)onDeviceFound {
+    printf("device found\n");
+}
 
 - (void)onConnectedWithDevice:(PalDevice * _Nonnull)device {
     NSLog(@"Device has connected");

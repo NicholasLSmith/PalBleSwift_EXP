@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <PalBleSwift/PalBleSwift-Swift.h>
 
-@interface ViewController : UIViewController <ScanListener, DeviceListener, ActivatorListener>
+@interface ViewController : UIViewController <ScanListener, ConnectListener, ActivatorListener>
 
 
 @end
