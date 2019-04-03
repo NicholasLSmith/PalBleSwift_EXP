@@ -24,24 +24,18 @@ PalActivator* palActivator;
     // Do any additional setup after loading the view, typically from a nib.
     
     printf("Starting\n");
-    //[TestCode Shout];
-    
-    //TestCode* testCode = [[TestCode alloc] init];
-    //NSLog(@"%@", [testCode getMessage]);
     
     palBle = [[PalBle alloc] init];
     [palBle setListenerWithListener:self];
     
     //Test to generate new key
-    //NSString *test = [palBle generateKey];
     for(int i = 0; i < 5; i = i + 1) {
         printf("%s\n", [[palBle generateKey] UTF8String]);
     }
     
     //[palBle startScan];
     //[palBle connectWithSerial:@"780000"];
-    [palBle connectWithSerial:@"780000" key:@"ciNNPxZXoB_0C7htKpejCw=="];
-
+    [palBle connectWithSerial:@"982039" key:@"ciNNPxZXoB_0C7htKpejCw==\n"];
 }
 
 
@@ -51,22 +45,29 @@ PalActivator* palActivator;
 }
 
 - (void)onScanResultsChanged {
-    NSArray *devices = [palBle getScanResults];
-    printf("New result");
+    //NSArray *devices = [palBle getScanResults];
+    printf("New result\n");
     
-    for (PalDevice *device in devices) {
+    /*for (PalDevice *device in devices) {
         NSLog(@"Device = %@", [device getSerial]);
         
-        if([[device getSerial] isEqualToString:@"680247"]) {
+        if([[device getSerial] isEqualToString:@"982030"]) {
             NSLog(@"Found what I'm after");
             [palBle stopScan];
-            [device connectWithKey:@"abcdefg" listener:self];
+            //[device connectWithKey:@"abcdefg" listener:self];
+            
+            if ([device isKindOfClass:[PalActivator class]]) {
+                palActivator = (PalActivator *)device;
+                [palActivator setHapticFeedbackOn:true];
+            }
         }
-    }
+    }*/
 }
 
 - (void)onScanTimeOut {
-    printf("all done");
+    printf("all done\n");
+    
+    [palBle startScan];
 }
 
 - (void)onScanErrorWithScanException:(BleScanException * _Nonnull)scanException { 
@@ -74,18 +75,37 @@ PalActivator* palActivator;
 }
 
 
+- (void)onConnectTimeout {
+    printf("device not found\n");
+}
+
 - (void)onDeviceFound {
     printf("device found\n");
 }
 
 - (void)onConnectedWithDevice:(PalDevice * _Nonnull)device {
-    NSLog(@"Device has connected");
+    printf("Device has connected\n");
     if ([device isKindOfClass:[PalActivator class]]) {
         palActivator = (PalActivator *)device;
     }
 }
 
+- (void)onWaking {
+    printf("Waking\n");
+}
 
+- (void)onWoken {
+    printf("Woken\n");
+}
+
+- (void)onNewEncryptionKeyNeeded {
+    printf("New encryption key needed\n");
+    [palActivator setEncryptionKeyWithKeyBase64:(@"ciNNPxZXoB_0C7htKpejCw==\n")];
+}
+
+- (void)onInvalidEncryptionKey {
+    printf("Invalid encryption key\n");
+}
 
 - (void)onSummariesRetrieved {
     printf("Summaries Retrieved\n");
